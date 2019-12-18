@@ -1,5 +1,5 @@
 steps:
 # This step runs the unit tests on the app
 - name: "docker.io/library/python:3.7"
-  args: ['pip', 'install', '-t', 'lib', '-r', 'requirements.txt']
+  args: ['pip', 'install', '-r', 'requirements.txt']
   args: ["python",'-m','pytest']
