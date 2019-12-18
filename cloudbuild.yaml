@@ -5,6 +5,6 @@ steps:
   entrypoint: /bin/sh
   args:
   - -c
-  - 'pip install -t /workspace/lib -r requirements.txt && pytest -v tests/test_generator.py'
+  - 'pip install -t /workspace/lib -r requirements.txt && python -m pytest -v tests/test_generator.py'
   
   
